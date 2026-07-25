@@ -110,3 +110,137 @@ button:hover {
     }
 
 }
+
+
+
+/* Love Letter Page */
+
+.letterPage {
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:20px;
+
+    background:linear-gradient(
+        135deg,
+        #ffb6d9,
+        #ffe6f2
+    );
+
+}
+
+
+
+.letterBox {
+
+    max-width:500px;
+
+    width:100%;
+
+    padding:35px 25px;
+
+    background:rgba(255,255,255,0.75);
+
+    border-radius:30px;
+
+    text-align:center;
+
+    box-shadow:
+    0 15px 40px rgba(255,0,100,0.25);
+
+    animation:letterOpen 1s ease;
+
+}
+
+
+
+.smallHeart {
+
+    font-size:55px;
+
+    animation:heartbeat 1.5s infinite;
+
+}
+
+
+
+.letterBox h1 {
+
+    color:#ff2f75;
+
+    font-size:30px;
+
+    margin:15px 0;
+
+}
+
+
+
+.letterBox p {
+
+    color:#6b2145;
+
+    font-size:17px;
+
+    line-height:1.7;
+
+}
+
+
+
+@keyframes letterOpen {
+
+    from {
+
+        opacity:0;
+
+        transform:
+        translateY(40px)
+        scale(0.8);
+
+    }
+
+
+    to {
+
+        opacity:1;
+
+        transform:
+        translateY(0)
+        scale(1);
+
+    }
+
+}
+
+
+
+/* Mobile Fix */
+
+@media(max-width:600px){
+
+    .letterBox {
+
+        padding:25px 18px;
+
+    }
+
+
+    .letterBox h1 {
+
+        font-size:26px;
+
+    }
+
+
+    .letterBox p {
+
+        font-size:15px;
+
+    }
+
+}
